@@ -83,6 +83,29 @@ Frontend runs on `http://localhost:5173`.
 - Log in to access the protected dashboard
 - Create invoices, track expenses, and review monthly performance
 
+## Free Hosting
+
+The most practical free setup for this project is:
+
+- `Render` for the Django API
+- `Render Static Site` for the React frontend
+- `Neon` for free PostgreSQL
+
+This repo now includes:
+
+- `render.yaml` for Render blueprint deployment
+- `backend/.env.example` with production variable examples
+- `frontend/public/_redirects` for SPA routing on refresh
+
+For production, make sure these values are updated:
+
+- `VITE_API_BASE_URL` to your deployed backend URL
+- `ALLOWED_HOSTS` to your backend domain
+- `CORS_ALLOWED_ORIGINS` and `CSRF_TRUSTED_ORIGINS` to your frontend domain
+- `JWT_COOKIE_SECURE=True`
+- `JWT_COOKIE_SAMESITE=None`
+- `USE_SQLITE=False` with your Postgres credentials
+
 ## Folder Structure
 
 ```text

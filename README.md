@@ -13,7 +13,7 @@ Detailed technical documentation is available in [PROJECT_DOCUMENTATION.md](./PR
 
 ## Live Demo
 
-[View Live Demo](https://your-live-demo-link.com)
+[View Live Demo](https://budget-desk-system.vercel.app/)
 
 ## Features
 
